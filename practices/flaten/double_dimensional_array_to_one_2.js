@@ -5,6 +5,7 @@ function double_to_one(collection) {
 	for(var i in collection){
 		if(temp.indexOf(collection[i]) == -1){
 			temp.push(collection[i]);
+			temp.indexOf(collection[i])=1;
 		}
 	}
 	return temp;
