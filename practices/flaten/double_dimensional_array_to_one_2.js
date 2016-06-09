@@ -1,10 +1,13 @@
 'use strict';
 
 function double_to_one(collection) {
-	var temp = [];
+	var arr = [];
 	for(var i = 0; i < collection.length; i++){
-		if(temp.indexOf(collection[i]) === -1){
-			temp.push(collection[i]);
+		arr=arr.concat(collection[i]);
+	}
+	for(var i = 0; i < arr.length; i++){
+		if(temp.indexOf(arr[i]) === -1){
+			temp.push(arr[i]);
 		}
 	}
 	return temp;
