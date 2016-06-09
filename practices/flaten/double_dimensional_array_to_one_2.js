@@ -2,6 +2,7 @@
 
 function double_to_one(collection) {
 	var arr = [];
+	var temp = [];
 	for(var i = 0; i < collection.length; i++){
 		arr=arr.concat(collection[i]);
 	}
